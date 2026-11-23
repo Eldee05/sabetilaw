@@ -20,7 +20,7 @@ export default function Hero() {
             <span>Information · Guidance · Appropriate referral</span>
           </div>
         </div>
-        <aside className="constitution-panel" aria-label="Constitutional foundation and public authority reference">
+        <aside className="constitution-panel" aria-label="Constitutional text and Department of Justice identification">
           <div className="constitution-paper">
             <div className="paper-topline">THE CONSTITUTION OF THE UNITED STATES</div>
             <div className="paper-ornament" aria-hidden="true">✦</div>
@@ -34,14 +34,14 @@ export default function Hero() {
             <div className="paper-footer">PREAMBLE · SEPTEMBER 17, 1787</div>
           </div>
           <div className="authority-reference">
-            <div className="authority-monogram" aria-hidden="true">U.S.</div>
+            <div className="authority-logo-placeholder" aria-label="Department of Justice logo placement">DOJ<br /><small>LOGO</small></div>
             <div className="authority-copy">
-              <span>OFFICIAL FEDERAL RESOURCE</span>
+              <span>DEPARTMENT IDENTIFICATION</span>
               <strong>U.S. Department of Justice</strong>
-              <a href="https://www.justice.gov/" target="_blank" rel="noopener noreferrer">Visit the official DOJ website ↗</a>
+              <small className="authority-note">Referral is considered only after an assessment of the case.</small>
             </div>
           </div>
-          <div className="hero-panel-caption">Constitutional text and public agency resources are presented for reference.</div>
+          <div className="hero-panel-caption">Constitutional text and agency identification are presented for reference.</div>
         </aside>
       </div>
       <div className="hero-bottom-rule" />
