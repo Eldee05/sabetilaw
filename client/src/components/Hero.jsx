@@ -24,6 +24,7 @@ export default function Hero() {
           <div className="constitution-paper">
             <div className="paper-topline">THE CONSTITUTION OF THE UNITED STATES</div>
             <div className="paper-ornament" aria-hidden="true">✦</div>
+            <img className="paper-great-seal" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg" alt="Great Seal of the United States" />
             <div className="paper-title">We the People</div>
             <div className="paper-rule" />
             <p>
@@ -34,7 +35,7 @@ export default function Hero() {
             <div className="paper-footer">PREAMBLE · SEPTEMBER 17, 1787</div>
           </div>
           <div className="authority-reference">
-            <div className="authority-logo-placeholder" aria-label="Department of Justice wordmark reference">DOJ</div>
+            <img className="authority-flag" src="https://www.justice.gov/sites/default/files/styles/featured_group_content_image/public/2022-11/our-work-graphic-doj-flag.png?itok=ZQP_dFzt" alt="U.S. Department of Justice flag outside its headquarters" />
             <div className="authority-copy">
               <span>U.S. FEDERAL JUSTICE SYSTEM</span>
               <strong>U.S. Department of Justice</strong>
