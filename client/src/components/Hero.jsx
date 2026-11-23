@@ -34,7 +34,7 @@ export default function Hero() {
             <div className="paper-footer">PREAMBLE · SEPTEMBER 17, 1787</div>
           </div>
           <div className="authority-reference">
-            <div className="authority-monogram" aria-hidden="true">DOJ</div>
+            <div className="authority-monogram" aria-hidden="true">U.S.</div>
             <div className="authority-copy">
               <span>OFFICIAL FEDERAL RESOURCE</span>
               <strong>U.S. Department of Justice</strong>
