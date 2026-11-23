@@ -2,7 +2,7 @@ export default function Notice() {
   return (
     <div className="disc">
       <div className="w">
-        <b>Notice:</b> Sabetilaw P.C. is a private law and investigations firm. We are not a government agency and are not affiliated with ICE, the FBI, Europol or any public authority. We will never ask you for payment to “release” or “recover” funds by phone or message.
+        <b>Important information:</b> Sabetilaw operates as a licensed legal intermediary. It is not the U.S. Department of Justice, DHS, ICE, or another U.S. government agency. References and links to public authorities are provided for information and appropriate direction; they do not imply government ownership, endorsement, or affiliation.
       </div>
     </div>
   );
