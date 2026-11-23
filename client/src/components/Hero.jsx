@@ -1,27 +1,50 @@
 export default function Hero() {
   return (
-    <section className="hero" aria-labelledby="home-heading">
-      <div className="w">
-        <div>
-          <span className="hero-kicker">Legal assistance &amp; public information</span>
-          <h1 id="home-heading">Guidance and access to the <span>right assistance</span>.</h1>
+    <section className="hero-institutional" aria-labelledby="home-heading">
+      <div className="hero-top-rule" />
+      <div className="w hero-institutional-inner">
+        <div className="hero-copy">
+          <div className="eyebrow"><span /> LEGAL INTERMEDIARY · PUBLIC INFORMATION</div>
+          <h1 id="home-heading">A clear path to <em>guidance,</em><br />information and assistance.</h1>
           <p>
-            A central point of contact for victims seeking information, legal guidance
-            and direction to appropriate sources of help.
+            We help individuals understand available avenues of support, obtain
+            appropriate legal guidance and identify the relevant organisations
+            or authorities when further assistance is required.
           </p>
           <div className="hero-actions">
-            <a className="btn" href="#complaint">Submit an enquiry</a>
-            <a className="btn o" href="#help">Explore assistance</a>
+            <a className="hero-primary" href="#complaint">Make an enquiry <span aria-hidden="true">→</span></a>
+            <a className="hero-secondary" href="#help">Explore areas of assistance</a>
+          </div>
+          <div className="hero-assurance">
+            <span className="assurance-rule" />
+            <span>Information · Guidance · Appropriate referral</span>
           </div>
         </div>
-        <div className="emb" aria-hidden="true">
-          <div style={{ textAlign: 'center', maxWidth: 230 }}>
-            <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '.08em' }}>SABETILAW</div>
-            <div style={{ height: 1, background: 'currentColor', margin: '12px 0' }} />
-            <div style={{ fontSize: 14, lineHeight: 1.5 }}>Information<br />Guidance<br />Appropriate referral</div>
+        <aside className="constitution-panel" aria-label="Constitutional foundation and public authority reference">
+          <div className="constitution-paper">
+            <div className="paper-topline">THE CONSTITUTION OF THE UNITED STATES</div>
+            <div className="paper-ornament" aria-hidden="true">✦</div>
+            <div className="paper-title">We the People</div>
+            <div className="paper-rule" />
+            <p>
+              in Order to form a more perfect Union, establish Justice,
+              insure domestic Tranquility, provide for the common defence,
+              promote the general Welfare, and secure the Blessings of Liberty…
+            </p>
+            <div className="paper-footer">PREAMBLE · SEPTEMBER 17, 1787</div>
           </div>
-        </div>
+          <div className="authority-reference">
+            <div className="authority-monogram" aria-hidden="true">DOJ</div>
+            <div className="authority-copy">
+              <span>OFFICIAL FEDERAL RESOURCE</span>
+              <strong>U.S. Department of Justice</strong>
+              <a href="https://www.justice.gov/" target="_blank" rel="noopener noreferrer">Visit the official DOJ website ↗</a>
+            </div>
+          </div>
+          <div className="hero-panel-caption">Constitutional text and public agency resources are presented for reference.</div>
+        </aside>
       </div>
+      <div className="hero-bottom-rule" />
     </section>
   );
 }
