@@ -410,11 +410,12 @@ body { font-family: Arial, "Helvetica Neue", sans-serif; color: #1b2d3d; }
 .constitution-paper p { max-width: 330px; margin: 0 auto; font: 14px/1.7 Georgia,serif; color: #4e4638; }
 .paper-footer { margin-top: 17px; font: 700 8px Georgia,serif; letter-spacing: .15em; color: #796b50; }
 .authority-reference { display: flex; align-items: center; gap: 15px; margin-top: 23px; padding: 14px 17px; border: 1px solid #476078; background: #102f4d; }
-.authority-monogram { width: 43px; height: 43px; flex: none; display: grid; place-items: center; border: 1px solid #b8a477; border-radius: 50%; color: #e2d4b5; font: 700 12px Georgia,serif; }
+.authority-logo-placeholder { width: 58px; height: 58px; flex: none; display: grid; place-content: center; text-align: center; border: 1px dashed #b8a477; color: #e2d4b5; font: 700 13px Georgia,serif; letter-spacing: .06em; }
+.authority-logo-placeholder small { font: 700 7px Arial,sans-serif; letter-spacing: .2em; }
+.authority-note { color: #c1cfda; font-size: 10px; line-height: 1.45; }
 .authority-copy { display: grid; gap: 3px; }
 .authority-copy > span { color: #c1cfda; font-size: 8px; letter-spacing: .15em; font-weight: 700; }
 .authority-copy strong { color: #fff; font: 16px Georgia,serif; }
-.authority-copy a { color: #e1d2ad; font-size: 11px; text-decoration: underline; text-underline-offset: 3px; }
 .hero-panel-caption { color: #aebdca; font-size: 9px; line-height: 1.4; margin-top: 12px; text-align: right; }
 .institution-section { background: #fff !important; }
 .about-institutional { display: grid; grid-template-columns: 190px minmax(0,1.2fr) minmax(200px,.7fr); gap: 34px; align-items: start; }
