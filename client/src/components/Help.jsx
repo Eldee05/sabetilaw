@@ -1,7 +1,7 @@
 const services = [
   { title: 'Fraud and financial crime', text: 'Information and legal guidance for people affected by online fraud, scams and financial or corporate misconduct.', icon: <><path d="M12 3 20 7v5c0 4.5-3 7.5-8 9-5-1.5-8-4.5-8-9V7l8-4Z" /><path d="m8.5 12 2.2 2.2 4.8-5" /></> },
   { title: 'Immigration matters', text: 'Guidance on immigration-related legal questions and direction to appropriate official information and assistance.', icon: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" /></> },
-  { title: 'Cross-border disputes', text: 'Initial guidance on matters involving parties, transactions or issues across more than one jurisdiction.', icon: <><path d="M4 5h6v6H4zM14 13h6v6h-6z" /><path d="M10 8h3a3 3 0 0 1 3 3v2M14 16h-3a3 3 0 0 1-3-3v-2" /></> },
+  { title: 'Criminal offences', text: 'Information and legal guidance for individuals affected by criminal offences, including understanding available reporting options and appropriate channels for assistance.', icon: <><path d="M12 3 20 7v5c0 4.5-3 7.5-8 9-5-1.5-8-4.5-8-9V7l8-4Z" /><path d="M12 8v5M12 16h.01" /></> },
   { title: 'Corporate compliance', text: 'Information and legal guidance concerning corporate obligations, compliance concerns and regulatory matters.', icon: <><path d="M4 21V7l8-4 8 4v14" /><path d="M2 21h20M9 21v-6h6v6M8 9h.01M12 9h.01M16 9h.01" /></> },
 ];
 const steps = [
