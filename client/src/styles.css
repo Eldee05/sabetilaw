@@ -638,14 +638,17 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
 .assistance-section::before {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   inset: 0;
   pointer-events: none;
-  background-image: url("/images/assistance-flag-gavel.jpg"), url("/images/assistance-handcuffs.jpg");
+  background-image: url("/images/assistance-gavel.jpg"), url("/images/assistance-handcuffs.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: right 4% center, left 4% center;
-  background-size: 390px auto, 250px auto;
-  opacity: .16;
+  background-position: right 3% center, left 3% center;
+  background-size: 420px auto, 270px auto;
+  opacity: .13;
+  mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
 }
 .assistance-section > .w {
   position: relative;
@@ -665,9 +668,9 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
 }
 @media (max-width: 760px) {
   .assistance-section::before {
-    background-size: 310px auto, 190px auto;
-    background-position: right -35px center, left -25px center;
-    opacity: .12;
+    background-size: 300px auto, 180px auto;
+    background-position: right -55px center, left -35px center;
+    opacity: .11;
   }
   .assistance-section .service-card {
     padding: 15px 18px 17px;
@@ -675,8 +678,8 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
 }
 @media (max-width: 540px) {
   .assistance-section::before {
-    background-size: 240px auto, 150px auto;
-    background-position: right -55px center, left -45px center;
+    background-size: 230px auto, 140px auto;
+    background-position: right -75px center, left -60px center;
     opacity: .09;
   }
 }
