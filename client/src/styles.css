@@ -497,3 +497,190 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
 .disc { display: none !important; }
 .authority-logo-placeholder { border-style: solid; font-size: 15px; letter-spacing: .08em; }
 .authority-logo-placeholder small { display: none; }
+
+
+/* Official U.S. and DOJ imagery supplied for the institutional reference panel. */
+.paper-great-seal {
+  display: block;
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+  margin: 8px auto 3px;
+}
+.authority-flag {
+  display: block;
+  flex: 0 0 92px;
+  width: 92px;
+  height: 66px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgb(255 255 255 / 28%);
+}
+@media (max-width: 430px) {
+  .paper-great-seal { width: 74px; height: 74px; }
+  .authority-flag { flex-basis: 78px; width: 78px; height: 58px; }
+}
+
+
+
+/* Public-service layouts for the redesigned sections. */
+.public-section { padding: 62px 0; border-bottom: 1px solid #d7dfe5; background: #fff; }
+.public-section:nth-of-type(even) { background: #f3f6f8 !important; }
+.public-section .section-index { margin-bottom: 17px; }
+.public-section .section-index > span:first-child { font: 20px Georgia,serif; color: #a8874f; }
+.public-section .section-index > span:last-child { font-size: 9px; letter-spacing: .15em; color: #526b7f; }
+.public-section h2 { font: 400 clamp(27px,3vw,38px)/1.2 Georgia,"Times New Roman",serif; color: #102f4c; margin: 0 0 12px; }
+.public-section .lead { color: #4d6070; font-size: 15px; line-height: 1.75; margin: 0; max-width: 760px; }
+.public-section-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 28px; margin-bottom: 27px; }
+.section-stamp { flex: none; display: inline-block; border: 1px solid #b8c5cf; padding: 9px 12px; color: #587084; font-size: 8px; line-height: 1.6; letter-spacing: .12em; text-align: center; }
+.about-section .about-institutional { padding-top: 0; padding-bottom: 0; }
+.about-section .about-copy h2 { margin-bottom: 18px; }
+.about-section .about-copy > p:not(.lead) { font-size: 14px; line-height: 1.8; color: #536575; }
+.assistance-section { background: #f2f5f7 !important; }
+.service-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0; border-top: 1px solid #c7d1d9; border-left: 1px solid #c7d1d9; }
+.service-card { min-height: 0; display: block; padding: 22px 24px 25px; border: 0; border-right: 1px solid #c7d1d9; border-bottom: 1px solid #c7d1d9; background: #fff; box-shadow: none; }
+.service-card:hover { background: #fafdff; box-shadow: inset 3px 0 #426f8e; }
+.service-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.service-number { color: #9b7c49; font: 18px Georgia,serif; }
+.service-icon { min-height: 0; width: 33px; height: 33px; justify-content: center; color: #285678; }
+.service-icon svg { width: 28px; height: 28px; }
+.service-card h3 { margin: 0 0 8px; font: 20px Georgia,serif; color: #163b5b; }
+.service-card p { max-width: 570px; font-size: 14px; line-height: 1.7; color: #506272; }
+.process-block { margin-top: 38px; padding-top: 25px; border-top: 1px solid #c7d1d9; }
+.process-heading > span,.process-heading-label { color: #64798a; font-size: 9px; letter-spacing: .15em; font-weight: 700; }
+.process-block > h3,.process-heading h3 { margin: 7px 0 17px; color: #163b5b; font: 23px Georgia,serif; }
+.process-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 0; border: 1px solid #c7d1d9; background: #fff; }
+.process-card { gap: 15px; padding: 19px; background: #fff; border: 0; border-right: 1px solid #d5dde3; }
+.process-card:last-child { border-right: 0; }
+.process-number { font: 20px Georgia,serif; color: #a48653; }
+.process-card h4 { font: 17px Georgia,serif; color: #183d5d; }
+.process-card p { font-size: 13px; line-height: 1.65; }
+.news-section { background: #fff !important; }
+.bulletin-list { border-top: 1px solid #aebdc8; }
+.bulletin-item { display: grid; grid-template-columns: 48px minmax(0,1fr) 22px; align-items: start; gap: 16px; padding: 19px 13px; color: #193b58; text-decoration: none; border-bottom: 1px solid #d2dbe1; background: #fff; }
+.bulletin-item:hover { background: #f2f6f8; color: #0b2947; }
+.bulletin-number { color: #a48653; font: 19px Georgia,serif; padding-top: 3px; }
+.bulletin-content { display: grid; gap: 5px; }
+.bulletin-meta { color: #63798a; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.bulletin-meta span { padding: 0 5px; }
+.bulletin-content strong { font: 19px/1.35 Georgia,serif; color: #173b5e; }
+.bulletin-content em { color: #596b79; font-size: 13px; line-height: 1.6; font-style: normal; }
+.bulletin-arrow { color: #58758a; font-size: 18px; }
+.bulletin-empty { margin: 0; padding: 18px; color: #566b7b; background: #f4f7f9; font-size: 14px; }
+.personnel-section { background: #f3f6f8 !important; }
+.personnel-list { border-top: 1px solid #b9c6d0; }
+.personnel-row { display: flex; align-items: center; gap: 17px; min-height: 94px; padding: 15px 12px; border-bottom: 1px solid #cbd5dc; background: transparent; }
+.personnel-number { color: #a48653; font: 18px Georgia,serif; width: 28px; }
+.personnel-row > svg { width: 54px; height: 54px; flex: none; }
+.personnel-details { display: grid; gap: 4px; }
+.personnel-details strong { color: #173b5e; font: 18px Georgia,serif; }
+.personnel-details span { color: #5b6f7e; font-size: 12px; }
+.personnel-status { margin-left: auto; color: #718494; font-size: 8px; letter-spacing: .12em; }
+.contact-section { background: #eaf0f4 !important; }
+.contact-panel { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); border: 1px solid #bdcbd5; background: #fff; }
+.contact-copy { padding: 34px; background: #123653; color: #fff; }
+.contact-kicker { color: #d3c19a; font-size: 9px; letter-spacing: .16em; font-weight: 700; }
+.contact-copy h2 { margin: 13px 0 15px; color: #fff; }
+.contact-copy > p { color: #d2dde5; font-size: 14px; line-height: 1.75; }
+.contact-guidance { display: grid; gap: 5px; margin-top: 24px; padding: 14px; border-left: 2px solid #c6ae7b; background: rgb(255 255 255 / 7%); }
+.contact-guidance strong { color: #fff; font: 16px Georgia,serif; }
+.contact-guidance span { color: #d2dde5; font-size: 12px; line-height: 1.6; }
+.contact-copy .contact-emergency { margin-top: 22px; font-size: 12px; }
+.contact-form-wrap,.complaint-form-wrap { padding: 28px; background: #fff; }
+.contact-form-wrap form,.complaint-form-wrap form { gap: 13px; }
+.contact-form-wrap label,.complaint-form-wrap label { color: #344f64; font-size: 13px; font-weight: 600; }
+.contact-form-wrap input,.contact-form-wrap select,.contact-form-wrap textarea,.complaint-form-wrap input,.complaint-form-wrap select,.complaint-form-wrap textarea { border: 1px solid #b8c6d0; border-radius: 0; background: #fff; }
+.contact-form-wrap button,.complaint-form-wrap button { justify-self: start; border-radius: 0; background: #173b5e; border-color: #173b5e; }
+.complaint-section { background: #fff !important; }
+.alert { margin: 0 0 25px; border-radius: 0; border: 1px solid #dfcfaa; border-left: 4px solid #9e7e43; background: #fbf7ed; color: #4f442e; font-size: 13px; line-height: 1.7; }
+.alert b { color: #3d321e; }
+.complaint-layout { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); border: 1px solid #c7d1d9; }
+.complaint-steps { padding: 26px; background: #f2f5f7; }
+.complaint-step { display: flex; gap: 14px; padding: 18px 0; border-bottom: 1px solid #d2dbe1; }
+.complaint-step:last-child { border-bottom: 0; }
+.complaint-step > span { color: #a48653; font: 20px Georgia,serif; }
+.complaint-step h3 { margin: 0 0 5px; color: #173b5e; font: 18px Georgia,serif; }
+.complaint-step p { margin: 0; color: #596b79; font-size: 13px; line-height: 1.65; }
+.public-footer { padding: 0 0 25px; background: #0b2947; border-top: 0; }
+.footer-top-rule { height: 4px; background: linear-gradient(90deg,#9d202d 0 33.33%,#f4f1e9 33.33% 66.66%,#244e78 66.66%); }
+.footer-institutional { padding-top: 38px; }
+.footer-identity b { font: 700 20px Georgia,serif; letter-spacing: .12em; }
+.footer-identity > span { color: #d5c49f; }
+.footer-column h4 { margin: 0 0 13px; font: 16px Georgia,serif; color: #fff; }
+.footer-column a { margin: 8px 0; color: #d2dde5; }
+.footer-column a:hover { color: #fff; }
+.footer-legal { border-top: 1px solid #496078; color: #b8c7d3; }
+@media (max-width: 760px) {
+  .public-section { padding: 43px 0; }
+  .public-section-heading { flex-direction: column; }
+  .section-stamp { align-self: flex-start; }
+  .process-grid { grid-template-columns: 1fr; }
+  .process-card { border-right: 0; border-bottom: 1px solid #d5dde3; }
+  .process-card:last-child { border-bottom: 0; }
+  .contact-panel,.complaint-layout { grid-template-columns: 1fr; }
+  .contact-copy,.contact-form-wrap,.complaint-form-wrap,.complaint-steps { padding: 23px; }
+}
+@media (max-width: 540px) {
+  .service-grid { grid-template-columns: 1fr; }
+  .bulletin-item { grid-template-columns: 30px minmax(0,1fr) 16px; gap: 10px; padding: 16px 7px; }
+  .bulletin-content strong { font-size: 17px; }
+  .personnel-row { gap: 11px; }
+  .personnel-status { display: none; }
+}
+
+
+/* Areas of assistance: compact service cards and a restrained justice watermark. */
+.assistance-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.assistance-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("/images/assistance-flag-gavel.jpg"), url("/images/assistance-handcuffs.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 4% center, left 4% center;
+  background-size: 390px auto, 250px auto;
+  opacity: .16;
+}
+.assistance-section > .w {
+  position: relative;
+  z-index: 1;
+}
+.assistance-section .service-card {
+  padding: 14px 24px 16px;
+}
+.assistance-section .service-card-top {
+  margin-bottom: 8px;
+}
+.assistance-section .service-card h3 {
+  margin-bottom: 5px;
+}
+.assistance-section .service-card p {
+  line-height: 1.55;
+}
+@media (max-width: 760px) {
+  .assistance-section::before {
+    background-size: 310px auto, 190px auto;
+    background-position: right -35px center, left -25px center;
+    opacity: .12;
+  }
+  .assistance-section .service-card {
+    padding: 15px 18px 17px;
+  }
+}
+@media (max-width: 540px) {
+  .assistance-section::before {
+    background-size: 240px auto, 150px auto;
+    background-position: right -55px center, left -45px center;
+    opacity: .09;
+  }
+}
+
+/* Let the supplied photographic watermarks remain faintly visible beneath the service cards. */
+.assistance-section .service-card { background: rgb(255 255 255 / 88%); }
+.assistance-section .service-card:hover { background: rgb(255 255 255 / 94%); }
