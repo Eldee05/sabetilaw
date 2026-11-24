@@ -627,3 +627,55 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
   .personnel-row { gap: 11px; }
   .personnel-status { display: none; }
 }
+
+
+/* Areas of assistance: compact service cards and a restrained justice watermark. */
+.assistance-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.assistance-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("/images/assistance-watermark.svg");
+  background-repeat: no-repeat;
+  background-position: center 42%;
+  background-size: min(100% auto, 1600px);
+  opacity: .19;
+}
+.assistance-section > .w {
+  position: relative;
+  z-index: 1;
+}
+.assistance-section .service-card {
+  padding: 14px 24px 16px;
+}
+.assistance-section .service-card-top {
+  margin-bottom: 8px;
+}
+.assistance-section .service-card h3 {
+  margin-bottom: 5px;
+}
+.assistance-section .service-card p {
+  line-height: 1.55;
+}
+@media (max-width: 760px) {
+  .assistance-section::before {
+    background-size: auto 100%;
+    background-position: center;
+    opacity: .11;
+  }
+  .assistance-section .service-card {
+    padding: 15px 18px 17px;
+  }
+}
+@media (max-width: 540px) {
+  .assistance-section::before {
+    background-size: auto 85%;
+    opacity: .08;
+  }
+}
