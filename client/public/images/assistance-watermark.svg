@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <g stroke="#9b8054" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" opacity=".78">
+    <!-- Handcuffs, left -->
+    <g transform="translate(62 250) rotate(-24 230 190)">
+      <ellipse cx="150" cy="205" rx="112" ry="145"/>
+      <ellipse cx="150" cy="205" rx="78" ry="108"/>
+      <ellipse cx="410" cy="205" rx="112" ry="145"/>
+      <ellipse cx="410" cy="205" rx="78" ry="108"/>
+      <path d="M248 172l62-25 55 25M248 238l62 25 55-25"/>
+      <path d="M132 53l36-25 40 7 18 35-22 25-52-3zM392 53l36-25 40 7 18 35-22 25-52-3z"/>
+      <path d="M111 352l78 0M371 352l78 0"/>
+    </g>
+    <!-- Gavel, upper right -->
+    <g transform="translate(1090 112) rotate(34 210 150)">
+      <path d="M145 95l270 270" stroke-width="38"/>
+      <path d="M70 50l110-62 105 105-62 110z" fill="#9b8054" fill-opacity=".12"/>
+      <path d="M45 45l118-68 126 126-68 118z"/>
+      <path d="M80 10l125 125M375 350l-45 45 105 105 45-45z" />
+      <path d="M315 405l165 0M300 455l195 0" stroke-width="10"/>
+    </g>
+    <!-- Ceremonial judicial mace, right lower -->
+    <g transform="translate(1195 505) rotate(-12 170 160)">
+      <path d="M160 75v310" stroke-width="24"/>
+      <path d="M160 30c-28 0-50 22-50 50s22 50 50 50 50-22 50-50-22-50-50-50z" fill="#9b8054" fill-opacity=".12"/>
+      <path d="M160 15v-42M160 130v-35M160 385v48"/>
+      <path d="M108 65l-55-30M212 65l55-30M110 105l-57 30M210 105l57 30" stroke-width="12"/>
+      <path d="M120 170h80l-13 35h-54zM130 205h60l-9 145h-42z"/>
+      <path d="M90 385h140l-18 42H108z"/>
+      <path d="M130 427v42M160 427v56M190 427v-42"/>
+    </g>
+  </g>
+</svg>
