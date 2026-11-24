@@ -641,11 +641,11 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
   z-index: -1;
   inset: 0;
   pointer-events: none;
-  background-image: url("/images/assistance-watermark.svg");
-  background-repeat: no-repeat;
-  background-position: center 42%;
-  background-size: min(100% auto, 1600px);
-  opacity: .19;
+  background-image: url("/images/assistance-flag-gavel.jpg"), url("/images/assistance-handcuffs.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 4% center, left 4% center;
+  background-size: 390px auto, 250px auto;
+  opacity: .16;
 }
 .assistance-section > .w {
   position: relative;
@@ -665,9 +665,9 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
 }
 @media (max-width: 760px) {
   .assistance-section::before {
-    background-size: auto 100%;
-    background-position: center;
-    opacity: .11;
+    background-size: 310px auto, 190px auto;
+    background-position: right -35px center, left -25px center;
+    opacity: .12;
   }
   .assistance-section .service-card {
     padding: 15px 18px 17px;
@@ -675,7 +675,12 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
 }
 @media (max-width: 540px) {
   .assistance-section::before {
-    background-size: auto 85%;
-    opacity: .08;
+    background-size: 240px auto, 150px auto;
+    background-position: right -55px center, left -45px center;
+    opacity: .09;
   }
 }
+
+/* Let the supplied photographic watermarks remain faintly visible beneath the service cards. */
+.assistance-section .service-card { background: rgb(255 255 255 / 88%); }
+.assistance-section .service-card:hover { background: rgb(255 255 255 / 94%); }
