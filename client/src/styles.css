@@ -634,8 +634,16 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: #34413f !important;
   padding: 54px 0 58px;
+  /* The photographs belong to the full-width section, not the inner content panel. */
+  background-color: #102f4c !important;
+  background-image:
+    linear-gradient(180deg, rgb(7 28 46 / 70%) 0%, rgb(7 28 46 / 68%) 43%, rgb(63 48 35 / 82%) 100%),
+    url("/images/assistance-handcuffs.jpg"),
+    url("/images/assistance-gavel.jpg");
+  background-repeat: no-repeat;
+  background-position: center, left center, right center;
+  background-size: 100% 100%, 58% 100%, 58% 100%;
 }
 .assistance-section > .w {
   position: relative;
@@ -646,15 +654,7 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
   border: 1px solid rgb(255 255 255 / 22%);
   border-radius: 5px;
   overflow: hidden;
-  background-color: #102f4c;
-  background-image:
-    linear-gradient(180deg, rgb(7 28 46 / 67%) 0%, rgb(7 28 46 / 69%) 43%, rgb(63 48 35 / 83%) 100%),
-    url("/images/assistance-handcuffs.jpg"),
-    url("/images/assistance-gavel.jpg");
-  background-repeat: no-repeat;
-  background-position: center, left center, right center;
-  background-size: 100% 100%, 50% 100%, 50% 100%;
-  box-shadow: 0 18px 42px rgb(0 0 0 / 16%);
+  background: transparent;
 }
 .assistance-section .section-index { margin-bottom: 15px; }
 .assistance-section .section-index > span:first-child { color: #d6b77b; }
