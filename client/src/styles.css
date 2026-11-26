@@ -571,7 +571,7 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
 .personnel-list { border-top: 1px solid #b9c6d0; }
 .personnel-row { display: flex; align-items: center; gap: 17px; min-height: 94px; padding: 15px 12px; border-bottom: 1px solid #cbd5dc; background: transparent; }
 .personnel-number { color: #a48653; font: 18px Georgia,serif; width: 28px; }
-.personnel-row > svg { width: 54px; height: 54px; flex: none; }
+.personnel-row > .personnel-portrait { width: 58px; height: 58px; flex: none; object-fit: cover; object-position: center 24%; border: 1px solid #c5d0d8; background: #e8edf1; }
 .personnel-details { display: grid; gap: 4px; }
 .personnel-details strong { color: #173b5e; font: 18px Georgia,serif; }
 .personnel-details span { color: #5b6f7e; font-size: 12px; }
