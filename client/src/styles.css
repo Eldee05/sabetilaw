@@ -629,61 +629,111 @@ footer { background: #071f38; border-top: 4px solid #b49a69; }
 }
 
 
-/* Areas of assistance: compact service cards and a restrained justice watermark. */
+/* Areas of assistance: one image-led feature panel, following the supplied reference. */
 .assistance-section {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-}
-.assistance-section::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  pointer-events: none;
-  background-image: url("/images/assistance-gavel.jpg"), url("/images/assistance-handcuffs.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 3% center, left 3% center;
-  background-size: 420px auto, 270px auto;
-  opacity: .13;
-  mix-blend-mode: multiply;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
+  background: #34413f !important;
+  padding: 54px 0 58px;
 }
 .assistance-section > .w {
   position: relative;
-  z-index: 1;
+  z-index: 0;
+  max-width: 1200px;
+  padding: 38px 38px 34px;
+  color: #fff;
+  border: 1px solid rgb(255 255 255 / 22%);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #102f4c;
+  background-image:
+    linear-gradient(180deg, rgb(7 28 46 / 67%) 0%, rgb(7 28 46 / 69%) 43%, rgb(63 48 35 / 83%) 100%),
+    url("/images/assistance-handcuffs.jpg"),
+    url("/images/assistance-gavel.jpg");
+  background-repeat: no-repeat;
+  background-position: center, left center, right center;
+  background-size: 100% 100%, 50% 100%, 50% 100%;
+  box-shadow: 0 18px 42px rgb(0 0 0 / 16%);
+}
+.assistance-section .section-index { margin-bottom: 15px; }
+.assistance-section .section-index > span:first-child { color: #d6b77b; }
+.assistance-section .section-index > span:last-child { color: #e0e8ed; }
+.assistance-section h2 { color: #fff; }
+.assistance-section .lead { color: #e0e7eb; }
+.assistance-section .public-section-heading { margin-bottom: 24px; }
+.assistance-section .service-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid rgb(255 255 255 / 32%);
+  background: rgb(255 255 255 / 25%);
 }
 .assistance-section .service-card {
-  padding: 14px 24px 16px;
+  min-height: 0;
+  padding: 17px 20px 18px;
+  border: 0;
+  background: rgb(8 31 51 / 58%);
+  color: #fff;
+  backdrop-filter: blur(2px);
+  transition: background-color .18s ease;
 }
-.assistance-section .service-card-top {
-  margin-bottom: 8px;
+.assistance-section .service-card:hover {
+  background: rgb(8 31 51 / 76%);
+  box-shadow: inset 3px 0 #d5b77d;
 }
+.assistance-section .service-card-top { margin-bottom: 8px; }
+.assistance-section .service-number { color: #d6b77b; }
+.assistance-section .service-icon { color: #f1e6cf; }
 .assistance-section .service-card h3 {
-  margin-bottom: 5px;
+  margin: 0 0 5px;
+  color: #fff;
+  font: 20px Georgia, "Times New Roman", serif;
 }
 .assistance-section .service-card p {
+  max-width: 570px;
+  color: #e1e8ed;
+  font-size: 14px;
   line-height: 1.55;
 }
+.assistance-section .process-block {
+  margin-top: 28px;
+  padding-top: 21px;
+  border-top: 1px solid rgb(255 255 255 / 32%);
+}
+.assistance-section .process-heading > span { color: #e0d0ac; }
+.assistance-section .process-heading h3 {
+  margin: 7px 0 14px;
+  color: #fff;
+  font: 23px Georgia, "Times New Roman", serif;
+}
+.assistance-section .process-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid rgb(255 255 255 / 30%);
+  background: rgb(255 255 255 / 25%);
+}
+.assistance-section .process-card {
+  gap: 12px;
+  padding: 15px 16px;
+  background: rgb(8 31 51 / 64%);
+  border: 0;
+}
+.assistance-section .process-number { color: #d6b77b; }
+.assistance-section .process-card h4 {
+  color: #fff;
+  font: 17px Georgia, "Times New Roman", serif;
+}
+.assistance-section .process-card p { color: #e1e8ed; }
 @media (max-width: 760px) {
-  .assistance-section::before {
-    background-size: 300px auto, 180px auto;
-    background-position: right -55px center, left -35px center;
-    opacity: .11;
-  }
-  .assistance-section .service-card {
-    padding: 15px 18px 17px;
-  }
+  .assistance-section { padding: 35px 0; }
+  .assistance-section > .w { padding: 27px 22px 24px; }
+  .assistance-section .process-grid { grid-template-columns: 1fr; }
+  .assistance-section .process-card { border-bottom: 1px solid rgb(255 255 255 / 20%); }
+  .assistance-section .process-card:last-child { border-bottom: 0; }
 }
 @media (max-width: 540px) {
-  .assistance-section::before {
-    background-size: 230px auto, 140px auto;
-    background-position: right -75px center, left -60px center;
-    opacity: .09;
-  }
+  .assistance-section > .w { padding: 23px 16px 20px; }
+  .assistance-section .service-grid { grid-template-columns: 1fr; }
+  .assistance-section .service-card { padding: 15px 16px; }
+  .assistance-section .process-block { margin-top: 22px; }
 }
-
-/* Let the supplied photographic watermarks remain faintly visible beneath the service cards. */
-.assistance-section .service-card { background: rgb(255 255 255 / 88%); }
-.assistance-section .service-card:hover { background: rgb(255 255 255 / 94%); }
