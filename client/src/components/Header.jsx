@@ -2,7 +2,7 @@ const links = [
   ['about', 'The Organisation'],
   ['help', 'Areas of Assistance'],
   ['alerts', 'Public Briefings'],
-  ['immigration', 'Immigration Updates'],
+  ['us-news', 'U.S. News & Updates'],
   ['team', 'Our Personnel'],
 ];
 
@@ -20,26 +20,16 @@ export default function Header() {
         <div className="w masthead">
           <a className="org-identity" href="#top" aria-label="Sabetilaw home">
             <span className="org-identity-seal" aria-hidden="true">SL</span>
-            <span className="org-identity-copy">
-              <strong>SABETILAW</strong>
-              <small>LICENSED LEGAL INTERMEDIARY</small>
-            </span>
+            <span className="org-identity-copy"><strong>SABETILAW</strong><small>LICENSED LEGAL INTERMEDIARY</small></span>
           </a>
           <div className="masthead-divider" />
-          <div className="masthead-purpose">
-            <span>PUBLIC INFORMATION &amp; LEGAL GUIDANCE</span>
-            <strong>Connecting individuals with appropriate assistance</strong>
-          </div>
+          <div className="masthead-purpose"><span>PUBLIC INFORMATION &amp; LEGAL GUIDANCE</span><strong>Connecting individuals with appropriate assistance</strong></div>
           <a className="masthead-contact" href="#contact">Contact <span aria-hidden="true">→</span></a>
         </div>
-        <div className="nav-band">
-          <div className="w nav-band-inner">
-            <nav aria-label="Main navigation">
-              {links.map(([id, text]) => <a key={id} href={`#${id}`}>{text}</a>)}
-            </nav>
-            <a className="nav-enquiry" href="#complaint">Submit an enquiry <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
+        <div className="nav-band"><div className="w nav-band-inner">
+          <nav aria-label="Main navigation">{links.map(([id, text]) => <a key={id} href={`#${id}`}>{text}</a>)}</nav>
+          <a className="nav-enquiry" href="#complaint">Submit an enquiry <span aria-hidden="true">→</span></a>
+        </div></div>
       </header>
     </>
   );

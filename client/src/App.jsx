@@ -12,38 +12,20 @@ import Complaint from "./components/Complaint";
 import Footer from "./components/Footer";
 
 export default function App() {
-  const [news, setNews] = useState({ europe: [], immigration: [] });
+  const [news, setNews] = useState({ europe: [], us: [], lastUpdated: null });
   const [newsError, setNewsError] = useState(false);
-
   useEffect(() => {
-    getNews()
-      .then(setNews)
-      .catch(() => setNewsError(true));
+    getNews().then((data) => { setNews(data); setNewsError(false); }).catch(() => setNewsError(true));
   }, []);
-
   return (
     <>
       <Header />
       <main id="top">
-        <Hero />
-        <About />
-        <NewsSection
-          id="alerts"
-          band
-          title={
-            <>
-              Crime <span>Briefings</span>: Europe
-            </>
-          }
-          lead="Reading list from primary and specialist sources on organised crime, fraud and trafficking trends across the European Union."
-          items={news.europe}
-          error={newsError}
-        />
-        <Help />
-        <Team />
-        <Immigration items={news.immigration} error={newsError} />
-        <Contact />
-        <Complaint />
+        <Hero /><About />
+        <NewsSection id="alerts" band title={<>Crime <span>Briefings</span>: Europe</>} lead="Reading list from primary and specialist sources on organised crime, fraud and trafficking trends across the European Union." items={news.europe} error={newsError} />
+        <Help /><Team />
+        <Immigration items={news.us} error={newsError} updatedAt={news.lastUpdated} />
+        <Contact /><Complaint />
       </main>
       <Footer />
     </>

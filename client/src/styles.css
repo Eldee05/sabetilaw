@@ -751,3 +751,9 @@ section.public-section.assistance-section {
   background-position: center, left center, right center !important;
   background-size: 100% 100%, 58% 100%, 58% 100% !important;
 }
+
+/* Publisher labels and refresh time for the live U.S. news briefing */
+.news-update-line { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:0 0 12px; color:#536b7e; font-size:9px; letter-spacing:.1em; }
+.news-update-line > span { border:1px solid #cbd6df; padding:4px 8px; color:#173b5e; font-weight:700; }
+.news-update-line time { margin-left:auto; color:#667b8c; letter-spacing:.03em; text-transform:none; }
+@media (max-width:600px) { .news-update-line time { width:100%; margin-left:0; } }
